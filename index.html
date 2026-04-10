@@ -26,8 +26,23 @@
   <meta name="theme-color" content="#F59E0B">
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    input, button {
+      max-width: 100%;
+      min-width: 0;
+    }
+  </style>
 </head>
-<body>
+
+<body class="overflow-x-clip">
   <header class="sticky top-0 z-40 border-b border-gray-200/60 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/60">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 sm:h-20 items-center justify-center sm:justify-between">
@@ -57,29 +72,26 @@
             A soundboard that takes you straight to Taipei. Listen to the sounds of the MRT, buses, temple parades, and more. <span class="italic">Coming soon to iOS</span>
           </p>
 
-          <!-- Hero signup form -->
-          <form
-            action="https://formspree.io/f/xpqogywp"
-            method="POST"
-            class="mt-8 max-w-xl"
-          >
-            <label for="hero-email" class="sr-only">Email address</label>
-            <div class="flex flex-col gap-3 sm:flex-row">
+          <!-- HERO FORM -->
+          <form action="https://formspree.io/f/xpqogywp" method="POST" class="mt-8 max-w-xl">
+            <input type="hidden" name="_subject" value="TaiwanSounds Waitlist">
+
+            <div class="space-y-3 sm:flex sm:gap-3 sm:space-y-0">
               <input
-                id="hero-email"
                 type="email"
                 name="email"
                 required
-                placeholder="Enter your email for the waitlist"
-                class="w-full rounded-full border border-gray-300 bg-white px-5 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200"
+                placeholder="Enter your email"
+                class="w-full rounded-full border border-gray-300 bg-white px-5 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none transition focus:border-amber-500 focus:ring-4 focus:ring-amber-100"
               >
               <button
                 type="submit"
-                class="inline-flex items-center justify-center rounded-full bg-amber-500 px-6 py-3 font-semibold text-white hover:bg-amber-600 transition whitespace-nowrap"
+                class="w-full sm:w-auto rounded-full bg-amber-500 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-amber-600 hover:shadow-md focus:outline-none focus:ring-4 focus:ring-amber-200"
               >
                 Join the waitlist
               </button>
             </div>
+
             <p class="mt-3 text-sm text-gray-500">
               Get launch updates and be first to know when TaiwanSounds goes live.
             </p>
@@ -212,32 +224,25 @@
             <img src="images/baozi.png" alt="" class="w-40 h-auto drop-shadow-xl motion-reduce:animate-none">
           </div>
 
-          <!-- Bottom CTA form -->
-          <form
-            action="https://formspree.io/f/xpqogywp"
-            method="POST"
-            class="mt-8 mx-auto max-w-2xl"
-          >
-            <label for="cta-email" class="sr-only">Email address</label>
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+          <!-- CTA FORM -->
+          <form action="https://formspree.io/f/xpqogywp" method="POST" class="mt-8 mx-auto max-w-2xl">
+            <input type="hidden" name="_subject" value="TaiwanSounds Waitlist">
+
+            <div class="space-y-3 sm:flex sm:gap-3 sm:space-y-0">
               <input
-                id="cta-email"
                 type="email"
                 name="email"
                 required
-                placeholder="Your email address"
-                class="w-full rounded-full border border-white/20 bg-white px-5 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none focus:ring-2 focus:ring-white/50"
+                placeholder="Your email"
+                class="w-full rounded-full border border-white/20 bg-white px-5 py-3 text-gray-900 placeholder:text-gray-500 shadow-sm outline-none transition focus:ring-4 focus:ring-amber-200/40"
               >
               <button
                 type="submit"
-                class="inline-flex items-center justify-center rounded-full bg-white text-amber-700 px-6 py-3 sm:px-8 font-semibold shadow hover:bg-amber-50 transition whitespace-nowrap"
+                class="w-full sm:w-auto rounded-full bg-white px-6 py-3 font-semibold text-amber-700 shadow-sm transition hover:bg-amber-50 hover:shadow-md focus:outline-none focus:ring-4 focus:ring-white/40"
               >
                 Join the waitlist
               </button>
             </div>
-            <p class="mt-3 text-xs sm:text-sm text-amber-100">
-              Just good vibes and Taiwan’s best ambiences.
-            </p>
           </form>
         </div>
 
@@ -265,8 +270,4 @@
     </div>
   </footer>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> c46dcc18de43759a287acaa22c45ed52f9e06ae4
