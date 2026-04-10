@@ -2,233 +2,267 @@
 <html lang="en">
 <head>
   <title>TaiwanSounds - Iconic Sounds from Daily Life in Taiwan</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <!-- Open Graph Meta -->
-    <meta property="og:title" content="TaiwanSounds — Iconic Sounds from Daily Life in Taiwan" />
-    <meta property="og:description" content="Listen to the sounds of the MRT, scooters, temples, and more — anywhere." />
-    <meta property="og:image" content="taiwan_sounds_logo.jpg" />
-    <meta property="og:url" content=https://taiwansounds.com" />
-    <meta property="og:type" content="website" />
-    <!-- Twitter Card Meta -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="TaiwanSounds — Iconic Sounds from Daily Life in Taiwan" />
-    <meta name="twitter:description" content="Listen to the sounds of the MRT, scooters, temples, and more — anywhere." />
-    <meta name="twitter:image" content="taiwan_sounds_logo.jpg" />
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="TaiwanSounds">
-    <meta name="theme-color" content="#F59E0B">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="TaiwanSounds — Iconic Sounds from Daily Life in Taiwan" />
+  <meta property="og:description" content="Listen to the sounds of the MRT, scooters, temples, and more — anywhere." />
+  <meta property="og:image" content="taiwan_sounds_logo.jpg" />
+  <meta property="og:url" content="https://taiwansounds.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TaiwanSounds — Iconic Sounds from Daily Life in Taiwan" />
+  <meta name="twitter:description" content="Listen to the sounds of the MRT, scooters, temples, and more — anywhere." />
+  <meta name="twitter:image" content="taiwan_sounds_logo.jpg" />
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="TaiwanSounds">
+  <meta name="theme-color" content="#F59E0B">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
   <header class="sticky top-0 z-40 border-b border-gray-200/60 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/60">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 sm:h-20 items-center justify-center sm:justify-between">
-      <!-- Centered logo (always visible) -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 sm:h-20 items-center justify-center sm:justify-between">
         <a href="/">
           <img src="images/logo.png" alt="" class="h-12 sm:h-14 w-auto">
           <span class="sr-only">TaiwanSounds</span>
         </a>
-      <!-- Desktop nav (hidden on mobile) -->
-      <nav class="hidden sm:flex items-center gap-6 text-sm text-gray-600">
-        <a href="#why" class="hover:text-[#203a43]">Why</a>
-        <a href="#faq" class="hover:text-[#203a43]">FAQ</a>
-      </nav>
-    </div>
-  </div>
-</header>
-<!-- HERO -->
-<section class="relative pt-10 pb-8 sm:pt-14 sm:pb-12 lg:pt-16 lg:pb-12 overflow-x-clip">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="grid items-center gap-10 lg:grid-cols-2">
-      <div>
-        <p class="text-xs font-semibold tracking-widest text-amber-600 uppercase">A Soundboard of Taiwan</p>
-        <h1 class="mt-2 text-4xl sm:text-5xl font-bold leading-tight tracking-tight text-[#203a43]">
-          Experience the everyday sounds of <span class="text-amber-600">Taiwan</span>.
-        </h1>
-        <p class="mt-4 text-base sm:text-lg text-gray-700 max-w-prose">
-          A soundboard that takes you straight to Taipei. Listen to the sounds of the MRT, buses, temple parades, and more.
-        </p>
-        <p class="mt-4 text-base sm:text-lg text-gray-700 max-w-prose italic">
-          Coming soon to iOS
-        </p>
-        <!-- <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-          <%= link_to 'Sign up', new_user_registration_path, class: "inline-flex items-center justify-center rounded-full bg-amber-500 px-6 py-3 font-semibold text-white hover:bg-amber-600" %>
-          <%= link_to 'Log in', new_user_session_path, class: "inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 font-semibold hover:bg-gray-50" %>
-        </div> -->
-      </div>
-      <div class="relative text-center lg:ml-20">
-        <img src="images/app_screen.png" alt="Boba tea character leaning up against app screen" class="mx-auto block h-auto w-auto max-w-[340px] sm:max-w-[400px] object-contain select-none">
-        <div class="pointer-events-none absolute -top-8 -right-8 h-40 w-40 rounded-full bg-amber-200/40 blur-2xl"></div>
-        <div class="pointer-events-none absolute -bottom-8 -left-10 h-32 w-32 rounded-full bg-amber-300/30 blur-2xl"></div>
+
+        <nav class="hidden sm:flex items-center gap-6 text-sm text-gray-600">
+          <a href="#why" class="hover:text-[#203a43]">Why</a>
+          <a href="#faq" class="hover:text-[#203a43]">FAQ</a>
+        </nav>
       </div>
     </div>
-  </div>
-</section>
-<!-- PREVIEW SOUNDS -->
-<section id="preview" class="py-16 sm:py-20 bg-[#fefdfc]">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="text-3xl font-semibold text-[#203a43]">Popular Sounds</h2>
-    <p class="mt-2 text-gray-600">Listen to Taiwan's most iconic sounds.</p>
-    <div class="mt-10">
-      <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-10 pb-8 sm:pt-14 sm:pb-12 lg:pt-16 lg:pb-12 overflow-x-clip">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <p class="text-xs font-semibold tracking-widest text-amber-600 uppercase">A Soundboard of Taiwan</p>
+          <h1 class="mt-2 text-4xl sm:text-5xl font-bold leading-tight tracking-tight text-[#203a43]">
+            Experience the everyday sounds of <span class="text-amber-600">Taiwan</span>.
+          </h1>
+          <p class="mt-4 text-base sm:text-lg text-gray-700 max-w-prose">
+            A soundboard that takes you straight to Taipei. Listen to the sounds of the MRT, buses, temple parades, and more. <span class="italic">Coming soon to iOS</span>
+          </p>
+
+          <!-- Hero signup form -->
+          <form
+            action="https://formspree.io/f/xpqogywp"
+            method="POST"
+            class="mt-8 max-w-xl"
+          >
+            <label for="hero-email" class="sr-only">Email address</label>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <input
+                id="hero-email"
+                type="email"
+                name="email"
+                required
+                placeholder="Enter your email for the waitlist"
+                class="w-full rounded-full border border-gray-300 bg-white px-5 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200"
+              >
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-full bg-amber-500 px-6 py-3 font-semibold text-white hover:bg-amber-600 transition whitespace-nowrap"
+              >
+                Join the waitlist
+              </button>
+            </div>
+            <p class="mt-3 text-sm text-gray-500">
+              Get launch updates and be first to know when TaiwanSounds goes live.
+            </p>
+          </form>
+        </div>
+
+        <div class="relative text-center lg:ml-20">
+          <img src="images/app_screen.png" alt="Boba tea character leaning up against app screen" class="mx-auto block h-auto w-auto max-w-[340px] sm:max-w-[400px] object-contain select-none">
+          <div class="pointer-events-none absolute -top-8 -right-8 h-40 w-40 rounded-full bg-amber-200/40 blur-2xl"></div>
+          <div class="pointer-events-none absolute -bottom-8 -left-10 h-32 w-32 rounded-full bg-amber-300/30 blur-2xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW SOUNDS -->
+  <section id="preview" class="py-16 sm:py-20 bg-[#fefdfc]">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-semibold text-[#203a43]">Popular Sounds</h2>
+      <p class="mt-2 text-gray-600">Listen to Taiwan's most iconic sounds.</p>
+      <div class="mt-10">
+        <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
           <article class="rounded-2xl border border-gray-200 bg-white p-3 sm:p-4 shadow-sm hover:shadow-md transition flex flex-col text-center h-full">
             <img src="images/scooter.png" alt="" class="w-full aspect-[4/3] object-cover rounded-xl mb-2 sm:mb-3">
-            <h3 class="text-sm sm:text-base md:text-lg font-semibold text-[#203a43] leading-snug">
-              Scooters
-            </h3>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold text-[#203a43] leading-snug">Scooters</h3>
           </article>
           <article class="rounded-2xl border border-gray-200 bg-white p-3 sm:p-4 shadow-sm hover:shadow-md transition flex flex-col text-center h-full">
             <img src="images/taipei_bus.png" alt="" class="w-full aspect-[4/3] object-cover rounded-xl mb-2 sm:mb-3">
-            <h3 class="text-sm sm:text-base md:text-lg font-semibold text-[#203a43] leading-snug">
-              Taipei Bus
-            </h3>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold text-[#203a43] leading-snug">Taipei Bus</h3>
           </article>
           <article class="rounded-2xl border border-gray-200 bg-white p-3 sm:p-4 shadow-sm hover:shadow-md transition flex flex-col text-center h-full">
             <img src="images/mrt_doors.png" alt="" class="w-full aspect-[4/3] object-cover rounded-xl mb-2 sm:mb-3">
-            <h3 class="text-sm sm:text-base md:text-lg font-semibold text-[#203a43] leading-snug">
-              MRT Doors
-            </h3>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold text-[#203a43] leading-snug">MRT Doors</h3>
           </article>
           <article class="rounded-2xl border border-gray-200 bg-white p-3 sm:p-4 shadow-sm hover:shadow-md transition flex flex-col text-center h-full">
             <img src="images/mahjong.png" alt="" class="w-full aspect-[4/3] object-cover rounded-xl mb-2 sm:mb-3">
-            <h3 class="text-sm sm:text-base md:text-lg font-semibold text-[#203a43] leading-snug">
-              Mahjong Shuffling
-            </h3>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold text-[#203a43] leading-snug">Mahjong Shuffling</h3>
           </article>
-      </section>
-    </div>
-  </div>
-</section>
-<!-- WHY SECTION -->
-<section id="why" class="py-16 sm:py-20">
-  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
-    <div>
-      <h2 class="text-3xl font-semibold text-[#203a43]">Why TaiwanSounds?</h2>
-      <p class="mt-4 text-gray-700 leading-relaxed">For anyone missing the daily rhythms of Taiwan or wanting to learn more about Taiwan. This is your audio postcard.
-        Each sound is recorded locally and crafted to capture the essence of everyday life in Taiwan.</p>
-      <ul class="mt-6 space-y-3 text-gray-700">
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-amber-500"></span> Authentic sound recordings</li>
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-amber-500"></span> Save your favorites and get updates</li>
-      </ul>
-    </div>
-    <div class="relative">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm hover:shadow-md transition">
-          <h3 class="font-semibold text-[#203a43]">Joy</h3>
-          <p class="mt-1 text-sm text-gray-600">Rediscover the small sounds that make Taiwan so full of life.</p>
-        </div>
-        <div class="rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm hover:shadow-md transition">
-          <h3 class="font-semibold text-[#203a43]">Culture</h3>
-          <p class="mt-1 text-sm text-gray-600">Celebrate the everyday sounds that tell Taiwan’s story.</p>
-        </div>
+        </section>
       </div>
     </div>
-  </div>
-</section>
-<!-- FAQ SECTION -->
-<section id="faq" class="scroll-mt-20 py-16 bg-[#fefdfc]">
-  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-semibold text-center text-[#203a43]">FAQ</h2>
-    <div class="mt-10 grid gap-8 lg:grid-cols-12 lg:gap-12 items-start">
-      <!-- Left: image only -->
-      <div class="lg:col-span-5 flex justify-center lg:justify-start">
-        <img src="images/taipei_buildings.png" alt="Taipei Building characters" class="w-full max-w-sm lg:max-w-none lg:w-full h-auto object-contain select-none">
-      </div>
-      <!-- Right: FAQ list -->
-      <div class="lg:col-span-7 rounded-2xl border border-gray-200 bg-white shadow-sm divide-y divide-gray-200 lg:mt-1">
-        <!-- Item -->
-        <details class="group p-6" open>
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left font-medium text-[#203a43]">
-            <span>Is TaiwanSounds free?</span>
-            <svg class="h-5 w-5 text-gray-400 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clip-rule="evenodd"/>
-            </svg>
-          </summary>
-          <p class="mt-3 text-gray-600">Yes! You can listen for free. Donations and premium sounds may come later.</p>
-        </details>
-        <!-- Item -->
-        <details class="group p-6">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left font-medium text-[#203a43]">
-            <span>Can I download the sounds?</span>
-            <svg class="h-5 w-5 text-gray-400 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clip-rule="evenodd"/>
-            </svg>
-          </summary>
-          <p class="mt-3 text-gray-600">Currently, it’s streaming only. Offline support may come later.</p>
-        </details>
-        <!-- Item -->
-        <details class="group p-6">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left font-medium text-[#203a43]">
-            <span>Will you add more sounds?</span>
-            <svg class="h-5 w-5 text-gray-400 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clip-rule="evenodd"/>
-            </svg>
-          </summary>
-          <p class="mt-3 text-gray-600">Yes. All recordings are currently in Taipei. We plan to record in other cities like Taichung and Kaohsiung. Reach out if you’re interested!</p>
-        </details>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- CTA SECTION -->
-<section id="cta" class="bg-[#fefdfc] py-14 sm:py-24 overflow-x-hidden">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="relative mx-auto max-w-5xl rounded-3xl bg-amber-600 text-white shadow-[0_10px_30px_rgba(0,0,0,0.1)] overflow-hidden sm:overflow-visible">
-      <!-- Card content -->
-      <div class="px-6 py-10 sm:px-12 sm:py-16 text-center">
-        <h2 class="text-2xl sm:text-4xl font-bold leading-tight tracking-tight">
-          Love the sounds of Taiwan?
-        </h2>
-        <p class="mt-3 text-base sm:text-lg text-amber-50 max-w-2xl mx-auto">
-          TaiwanSounds will be available for download soon!
+  </section>
+
+  <!-- WHY SECTION -->
+  <section id="why" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
+      <div>
+        <h2 class="text-3xl font-semibold text-[#203a43]">Why TaiwanSounds?</h2>
+        <p class="mt-4 text-gray-700 leading-relaxed">
+          For anyone missing the daily rhythms of Taiwan or wanting to learn more about Taiwan. This is your audio postcard.
+          Each sound is recorded locally and crafted to capture the essence of everyday life in Taiwan.
         </p>
-        <!-- Mascot: MOBILE (above button, tighter spacing) -->
-        <div class="sm:hidden flex justify-center" aria-hidden="true">
-          <img src="images/baozi.png" alt="" class="w-40 h-auto drop-shadow-xl motion-reduce:animate-none">
-        </div>
-        <!-- CTA button -->
-        <!-- <div class="sm:mt-8">
-          <%= link_to 'Start Listening Now', new_user_registration_path, class: "inline-flex items-center justify-center rounded-full bg-white text-amber-700 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-semibold shadow hover:bg-amber-50 transition" %>
-        </div>
-        <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-amber-100">
-          Just good vibes and Taiwan’s best ambiences.
-        </p> -->
+        <ul class="mt-6 space-y-3 text-gray-700">
+          <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-amber-500"></span> Authentic sound recordings</li>
+          <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-amber-500"></span> Save your favorites and get updates</li>
+        </ul>
       </div>
-      <!-- Mascot: DESKTOP/TABLET (hanging off card) -->
-      <div class="hidden sm:block pointer-events-none select-none absolute -bottom-20 -right-14" aria-hidden="true">
-        <img src="images/baozi.png" alt="" class="w-48 md:w-64 h-auto drop-shadow-xl animate-bob motion-reduce:animate-none">
+      <div class="relative">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm hover:shadow-md transition">
+            <h3 class="font-semibold text-[#203a43]">Joy</h3>
+            <p class="mt-1 text-sm text-gray-600">Rediscover the small sounds that make Taiwan so full of life.</p>
+          </div>
+          <div class="rounded-2xl border border-gray-200 bg-white p-5 text-left shadow-sm hover:shadow-md transition">
+            <h3 class="font-semibold text-[#203a43]">Culture</h3>
+            <p class="mt-1 text-sm text-gray-600">Celebrate the everyday sounds that tell Taiwan’s story.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<footer class="border-t border-gray-200 bg-white text-gray-600">
-  <div class="mx-auto max-w-6xl px-4 py-10 text-center">
-    <!-- Logo -->
-    <a href="" class="inline-flex items-center gap-2 hover:opacity-90 transition">
-      <img src="images/logo.png" alt="" class="h-10 w-auto">
-      <span class="sr-only">TaiwanSounds</span>
-    </a>
-    <!-- Tagline -->
-    <p class="mt-3 text-sm text-gray-500">
-      Powered by 🦞 & 🧋 in Maine / Taipei 
-    </p>
-    <!-- Footer links -->
-    <!-- <div class="mt-5 flex flex-wrap items-center justify-center gap-4 text-sm">
-      <%= link_to "Contact", "https://forms.gle/dQXbXp1UZSw2zwgt6", target: "_blank", class: "hover:text-amber-600 transition" %>
-      <%= link_to "Privacy", (defined?(privacy_path) ? privacy_path : "/privacy"), class: "hover:text-amber-600 transition" %>
-      <%= link_to "Terms", (defined?(terms_path) ? terms_path : "/terms"), class: "hover:text-amber-600 transition" %>
-    </div> -->
-    <!-- Meta -->
-    <p class="mt-5 text-xs text-gray-400">
-      &copy; 2026 TaiwanSounds. Created by <a href="https://thebenswift.com" target="_blank" class="text-amber-500">thebenswift.com</a>
-    </p>
-  </div>
-</footer>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="scroll-mt-20 py-16 bg-[#fefdfc]">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold text-center text-[#203a43]">FAQ</h2>
+      <div class="mt-10 grid gap-8 lg:grid-cols-12 lg:gap-12 items-start">
+        <div class="lg:col-span-5 flex justify-center lg:justify-start">
+          <img src="images/taipei_buildings.png" alt="Taipei Building characters" class="w-full max-w-sm lg:max-w-none lg:w-full h-auto object-contain select-none">
+        </div>
+
+        <div class="lg:col-span-7 rounded-2xl border border-gray-200 bg-white shadow-sm divide-y divide-gray-200 lg:mt-1">
+          <details class="group p-6" open>
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left font-medium text-[#203a43]">
+              <span>Is TaiwanSounds free?</span>
+              <svg class="h-5 w-5 text-gray-400 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <p class="mt-3 text-gray-600">Yes! You can listen for free. Donations and premium sounds may come later.</p>
+          </details>
+
+          <details class="group p-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left font-medium text-[#203a43]">
+              <span>Can I download the sounds?</span>
+              <svg class="h-5 w-5 text-gray-400 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <p class="mt-3 text-gray-600">Currently, it’s streaming only. Offline support may come later.</p>
+          </details>
+
+          <details class="group p-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left font-medium text-[#203a43]">
+              <span>Will you add more sounds?</span>
+              <svg class="h-5 w-5 text-gray-400 transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <p class="mt-3 text-gray-600">Yes. All recordings are currently in Taipei. We plan to record in other cities like Taichung and Kaohsiung. Reach out if you’re interested!</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section id="cta" class="bg-[#fefdfc] py-14 sm:py-24 overflow-x-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="relative mx-auto max-w-5xl rounded-3xl bg-amber-600 text-white shadow-[0_10px_30px_rgba(0,0,0,0.1)] overflow-hidden sm:overflow-visible">
+        <div class="px-6 py-10 sm:px-12 sm:py-16 text-center">
+          <h2 class="text-2xl sm:text-4xl font-bold leading-tight tracking-tight">
+            Love the sounds of Taiwan?
+          </h2>
+          <p class="mt-3 text-base sm:text-lg text-amber-50 max-w-2xl mx-auto">
+            Join the waitlist and be first to know when TaiwanSounds launches.
+          </p>
+
+          <div class="sm:hidden flex justify-center mt-6" aria-hidden="true">
+            <img src="images/baozi.png" alt="" class="w-40 h-auto drop-shadow-xl motion-reduce:animate-none">
+          </div>
+
+          <!-- Bottom CTA form -->
+          <form
+            action="https://formspree.io/f/xpqogywp"
+            method="POST"
+            class="mt-8 mx-auto max-w-2xl"
+          >
+            <label for="cta-email" class="sr-only">Email address</label>
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <input
+                id="cta-email"
+                type="email"
+                name="email"
+                required
+                placeholder="Your email address"
+                class="w-full rounded-full border border-white/20 bg-white px-5 py-3 text-gray-900 placeholder:text-gray-400 shadow-sm outline-none focus:ring-2 focus:ring-white/50"
+              >
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-full bg-white text-amber-700 px-6 py-3 sm:px-8 font-semibold shadow hover:bg-amber-50 transition whitespace-nowrap"
+              >
+                Join the waitlist
+              </button>
+            </div>
+            <p class="mt-3 text-xs sm:text-sm text-amber-100">
+              Just good vibes and Taiwan’s best ambiences.
+            </p>
+          </form>
+        </div>
+
+        <div class="hidden sm:block pointer-events-none select-none absolute -bottom-20 -right-14" aria-hidden="true">
+          <img src="images/baozi.png" alt="" class="w-48 md:w-64 h-auto drop-shadow-xl animate-bob motion-reduce:animate-none">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-200 bg-white text-gray-600">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-center">
+      <a href="" class="inline-flex items-center gap-2 hover:opacity-90 transition">
+        <img src="images/logo.png" alt="" class="h-10 w-auto">
+        <span class="sr-only">TaiwanSounds</span>
+      </a>
+
+      <p class="mt-3 text-sm text-gray-500">
+        Powered by 🦞 & 🧋 in Maine / Taipei
+      </p>
+
+      <p class="mt-5 text-xs text-gray-400">
+        &copy; 2026 TaiwanSounds. Created by <a href="https://thebenswift.com" target="_blank" class="text-amber-500">thebenswift.com</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
-
